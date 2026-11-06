@@ -1,7 +1,5 @@
 # CSE-4050 Online-Quiz-System-Project
 
-# CSE 40500 Online Quiz System
-
 This is a group project for CSE 4050. The project is an online quiz system that allows users to answer quiz questions, and view their scores.
 
 ## Technologies
