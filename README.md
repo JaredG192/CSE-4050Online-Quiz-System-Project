@@ -1,41 +1,16 @@
-# CSE-4050 Online-Quiz-System-Project
+# React + Vite
 
-This is a group project for CSE 4050. The project is an online quiz system that allows users to answer quiz questions, and view their scores.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Technologies
+Currently, two official plugins are available:
 
-- React and JSX
-- HTML and CSS
-- JavaScript
-- Node.js
-- Express.js
-- MySQL
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Project Features
+## React Compiler
 
-- User-friendly quiz interface
-- Multiple-choice questions
-- Score tracking
-- User registration and login
-- Database storage for users and quiz information
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Project Structure
+## Expanding the ESLint configuration
 
-- `frontend/` - React user interface
-- `backend/` - Node.js and Express server
-- `database/` - MySQL database files and scripts
-
-## How to Run the Project
-
-1. Clone this repository.
-2. Install the required dependencies.
-3. Start the frontend and backend servers.
-4. Open the website in a browser.
-
-## Group Members
-
-- Add group member names here
-
-## Course
-
-CSE 40500
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
