@@ -30,17 +30,13 @@ body {
 }
 
 .logo {
-  width: 58px;
-  height: 58px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90px;
+  height: 90px;
+  display: block;
   margin: 0 auto 18px;
   border-radius: 50%;
+  object-fit: cover;
   background: #19a9d8;
-  color: white;
-  font-size: 34px;
-  font-weight: bold;
 }
 
 h1 {

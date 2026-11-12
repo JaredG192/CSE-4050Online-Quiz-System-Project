@@ -23,7 +23,7 @@ function App() {
       <section className="login-card">
         <img
           className="logo"
-          src="/images/coyote.png"
+          src={`${import.meta.env.BASE_URL}images/coyote.png`}
           alt="Coyote logo"
         />
 
