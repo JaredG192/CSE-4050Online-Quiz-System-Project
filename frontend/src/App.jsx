@@ -7,16 +7,39 @@ function App() {
   const [role, setRole] = useState("student");
   const [message, setMessage] = useState("");
 
-  function handleLogin(event) {
-    event.preventDefault();
+  async function handleLogin(event) {
+  event.preventDefault();
 
-    if (!email || !password) {
-      setMessage("Please enter your email and password.");
+  if (!email || !password) {
+    setMessage("Please enter your email and password.");
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:5001/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+        role,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      setMessage(data.message);
       return;
     }
 
-    setMessage(`Logged in as a ${role}.`);
+    setMessage(`Welcome! You are logged in as a ${data.user.role}.`);
+  } catch (error) {
+    setMessage("Unable to connect to the backend.");
   }
+}
 
   return (
     <main className="login-page">
